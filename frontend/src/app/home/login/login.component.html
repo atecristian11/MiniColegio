@@ -1,0 +1,41 @@
+<div class="bgComponent">
+    <div class="form">
+      <mat-card class="card">
+        <mat-card-title>Login</mat-card-title>
+        <!-- para agregarle el titulo a la card -->
+        <mat-card-content>
+          <div class="container">
+            <mat-form-field>
+              <!-- item de un formulario -->
+              <input
+                [(ngModel)]="regData.name"
+                matInput
+                placeholder="User"
+                required
+              />
+            </mat-form-field>
+            <mat-form-field>
+              <!-- item de un formulario -->
+              <input
+                [(ngModel)]="regData.password"
+                type="password"
+                matInput
+                placeholder="Password"
+                required
+              />
+            </mat-form-field>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button
+            (click)="login()"
+            class="button colorButton"
+            mat-raised-button
+          >
+            Login
+          </button> <br><br>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+  

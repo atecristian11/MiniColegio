@@ -1,0 +1,51 @@
+<div class="bgMatter">
+  <div class="form">
+    <mat-card class="card">
+      <mat-card-title>Register Matter</mat-card-title>
+      <hr />
+      <br /><br />
+      <!-- para agregarle el titulo a la card -->
+      <mat-card-content>
+        <div class="container">
+          <mat-form-field>
+            <!-- item de un formulario -->
+            <input
+              [(ngModel)]="regisD.name"
+              matInput
+              placeholder="Name Matter"
+              required
+            />
+          </mat-form-field>
+          <mat-form-field>
+            <!-- item de un formulario -->
+            <input
+              [(ngModel)]="regisD.st"
+              matInput
+              placeholder="Student Name to Enter"
+              required
+            />
+          </mat-form-field>
+          <!-- item de un formulario -->
+          <mat-form-field>
+            <input
+              [(ngModel)]="regisD.working"
+              matInput
+              placeholder="Working Day"
+              required
+            />
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button
+          (click)="registerMatter()"
+          class="button colorButton"
+          mat-raised-button
+        >
+          Register Matter
+        </button>
+        <br /><br />
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
