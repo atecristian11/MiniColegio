@@ -1,0 +1,214 @@
+{
+  "info": {
+    "_postman_id": "5d10635a-94e0-4b04-8967-03b50e0fd628",
+    "name": "MiniColegio",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Role",
+      "item": [
+        {
+          "name": "Create Role",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"user\",\r\n    \"description\": \"usuario de la plataforma\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3111/api/role/registerRole",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3111",
+              "path": ["api", "role", "registerRole"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Course",
+      "item": [
+        {
+          "name": "Create Course",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name1\": \"septimo\",\r\n    \"jornada\": \"mañana\",\r\n    \"school\": \"ciudadela cuba\",\r\n    \"nameM\": \"español\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3111/api/course/registerCourse",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3111",
+              "path": ["api", "course", "registerCourse"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List Course",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3111/api/course/listCourse",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3111",
+              "path": ["api", "course", "listCourse"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Student",
+      "item": [
+        {
+          "name": "Create Student",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"pepita\",\r\n    \"email\": \"pepita@gmail.com\",\r\n    \"cedula\": \"12256348\",\r\n    \"phone\": \"3121137\",\r\n    \"name1\": \"septimo\",\r\n    \"password\": \"1234\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3111/api/student/registerStudent",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3111",
+              "path": ["api", "student", "registerStudent"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List Student",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3111/api/student/listStudent",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3111",
+              "path": ["api", "student", "listStudent"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Teacher",
+      "item": [
+        {
+          "name": "Create Teacher",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nameT\": \"cristhian\",\r\n    \"email\": \"cristhian@gmail.com\",\r\n    \"cedula\": \"123456789\",\r\n    \"phone\": \"3113327\",\r\n    \"password\": \"1234\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3111/api/teacher/registerTeacher",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3111",
+              "path": ["api", "teacher", "registerTeacher"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List Teacher",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3111/api/teacher/listTeacher",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3111",
+              "path": ["api", "teacher", "listTeacher"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Matter",
+      "item": [
+        {
+          "name": "Create Matter",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"nameM\": \"español\",\r\n    \"nameT\": \"cristhian\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3111/api/matter/registerMatter",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3111",
+              "path": ["api", "matter", "registerMatter"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List Matter",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3111/api/matter/listMatter",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3111",
+              "path": ["api", "matter", "listMatter"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

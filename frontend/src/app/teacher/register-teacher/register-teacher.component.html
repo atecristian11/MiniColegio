@@ -1,15 +1,16 @@
 <div class="bgTeacher">
   <div class="form">
     <mat-card class="card">
-      <mat-card-title>Register Teacher</mat-card-title> 
-      <hr> <br><br>
+      <mat-card-title>Register Teacher</mat-card-title>
+      <hr />
+      <br /><br />
       <!-- para agregarle el titulo a la card -->
       <mat-card-content>
         <div class="container">
           <mat-form-field>
             <!-- item de un formulario -->
             <input
-              [(ngModel)]="regisD.name"
+              [(ngModel)]="regisD.nameT"
               matInput
               placeholder="Name and lastname"
               required
@@ -37,7 +38,7 @@
           <mat-form-field>
             <!-- item de un formulario -->
             <input
-              [(ngModel)]="regisD.cel"
+              [(ngModel)]="regisD.phone"
               matInput
               placeholder="Phone"
               required
